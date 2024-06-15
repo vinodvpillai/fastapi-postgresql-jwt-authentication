@@ -8,9 +8,7 @@ This is a microservice for user authentication built with FastAPI. It supports v
 
 - User Registration
 - User Login
-- Role Management
 - User Profile Update
-- Password Management
 - Token-based Authentication
 - Middleware for Logging and CORS
 - Token Blacklisting for Logout
