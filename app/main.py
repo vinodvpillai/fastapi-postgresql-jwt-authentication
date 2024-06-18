@@ -25,6 +25,11 @@ app.add_middleware(
 # Add Custom Logging Middleware
 app.add_middleware(LoggingMiddleware)
 
+
+@app.get('/api/healthchecker')
+def root():
+    return {'message': 'Service is running'}
+
 # Run the application
 # To run: `uvicorn app.main:app --reload`
 if __name__ == "__main__":
