@@ -10,6 +10,9 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
     POSTGRES_HOST: str
     POSTGRES_HOSTNAME: str
+    POSTGRES_SCHEMA: str
+    
+    DATABASE_URL: str
     
     CLIENT_ORIGIN: list
     

@@ -1,8 +1,10 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from app.core.database import Base
+from app.core.env_settings import settings
 
 class User(Base):
     __tablename__ = 'users'
+    __table_args__ = {'schema': settings.POSTGRES_SCHEMA}
 
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True)
