@@ -12,6 +12,7 @@ This is a microservice for user authentication built with FastAPI. It supports v
 - Token-based Authentication
 - Middleware for Logging and CORS
 - Token Blacklisting for Logout
+- Alembic for database migrations
 
 ## Project Structure
 
@@ -82,10 +83,16 @@ This is a microservice for user authentication built with FastAPI. It supports v
     ACCESS_TOKEN_EXPIRE_MINUTES=30
     ```
 
-5. **Run database migrations:**
-    ```sh
-    alembic upgrade head
-    ```
+5. **Database Setup:**
+
+Ensure your PostgreSQL server is running and create the necessary database.
+
+Run Database Migrations
+
+```sh
+alembic upgrade head
+```
+Now you have a database with all the migrations applied.
 
 ## Running the Application
 
